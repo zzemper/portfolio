@@ -1,0 +1,439 @@
+
+
+/* code for all pages */
+
+body{
+  font-family: 'Sorts Mill Goudy', serif; /* Test for this*/
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+  background-image: url('../images/concrete_seamless.png');
+}
+
+main{
+  margin-top: 20px;
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+#laptop_name{
+  display: none;
+}
+
+#mobile_name{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+#logo{
+  width: 10%;
+  height: 10%;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+}
+
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 0 30px;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color:rgb(52,147,209);
+  color: black;
+  padding: 30px;
+  font-size: 12pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer_link{
+  color: black;
+}
+
+/* code for Navbar */
+header{
+  background: rgb(159,215,2);
+  border-bottom: 3px solid rgb(52,147,209);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item_current a{
+  text-decoration: underline dotted;
+  color: black;
+}
+
+.nav_item a:hover, a:focus{
+  color: rgb(255,201,14);
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+/* About Me page code */
+#image1{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  border: 5px rgb(255,201,14) solid;
+}
+
+.gallery{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+#image2{
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+#i2{
+  grid-column: 2/span 2;
+  grid-row: 1/span 1;
+}
+
+#i6{
+  grid-column: 3/span 1;
+  grid-row: 2/span 1;
+}
+
+#image6{
+  grid-column: 1/span 2;
+  grid-row: 2/span 1;
+}
+
+#i4{
+  grid-column: 2/span 2;
+  grid-row: 3/span 1;
+}
+
+#image4{
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+
+#i5{
+  grid-column: 3/span 1;
+  grid-row: 4/span 1;
+}
+
+#image5{
+  grid-column: 1/span 2;
+  grid-row: 4/span 1;
+}
+
+#i3{
+  grid-column: 2/span 2;
+  grid-row: 5/span 1;
+}
+
+#image3{
+  grid-column: 1/span 1;
+  grid-row: 5/span 1;
+}
+
+#i9{
+  grid-column: 3/span 1;
+  grid-row: 6/span 1;
+}
+
+#image9{
+  grid-column: 1/span 2;
+  grid-row: 6/span 1;
+}
+
+#i8{
+  grid-column: 2/span 2;
+  grid-row: 7/span 1;
+}
+
+#image8{
+  grid-column: 1/span 1;
+  grid-row: 7/span 1;
+}
+
+#i7{
+  grid-column: 3/span 1;
+  grid-row: 8/span 1;
+}
+
+#image7{
+  grid-column: 1/span 2;
+  grid-row: 8/span 1;
+}
+
+#i10{
+  grid-column: 2/span 2;
+  grid-row: 9/span 1;
+}
+
+#image10{
+  grid-column: 1/span 1;
+  grid-row: 9/span 1;
+}
+
+.gallery > img{
+  border: 5px rgb(255,201,14) solid;
+  margin: 10px;
+  width: 70%;
+}
+
+/* experiences page code */
+.experiences{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+}
+
+#e1{
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+#exp1{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+
+#e2{
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+
+#exp2{
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+
+#e3{
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+
+#exp3{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+}
+
+/* projects page code */
+.projects{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+}
+
+#p1{
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+#proj1{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+
+#p2{
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+
+#proj2{
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+
+#p3{
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+
+#proj3{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+}
+
+/* contact page code */
+.contact{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: black;
+  height: auto;                /* Parallax effect */
+  background-image: url("../images/orange.jpg");
+  background-repeat: no-repeat;
+}
+
+#contact_message{
+  background-color: white;
+}
+
+.form{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.form > img{
+  border: 5px rgb(159,215,2) solid;
+  margin: 10px;
+  width: 90%;
+}
+
+#hrs{
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+#isr{
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+
+#zoo{
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+
+#roman{
+  grid-column: 1/span 1;
+  grid-row: 4/span 1;
+}
+
+#psp{
+  grid-column: 1/span 1;
+  grid-row: 5/span 1;
+}
+
+@media screen and (min-width: 850px){
+
+
+  /* Navbar */
+  header{
+    /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    /*Your code here again.*/  
+    flex-direction: row;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+
+  #logo{
+    align-items: center;
+  }
+
+  #laptop_name{
+    display: flex;
+  }
+
+  #mobile_name{
+    display: none;
+  }
+
+  #hrs{
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+  
+  #isr{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+  }
+  
+  .form{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  #zoo{
+    grid-column: 3/span 1;
+    grid-row: 1/span 1;
+  }
+  
+  #roman{
+    grid-column: 4/span 1;
+    grid-row: 1/span 1;
+  }
+  
+  #psp{
+    grid-column: 5/span 1;
+    grid-row: 1/span 1;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
+
